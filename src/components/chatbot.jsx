@@ -13,7 +13,7 @@ export const Chatbot = ({ onResponse }) => {
       // Send the user's question to the backend API
       setLoading(true);
       try {
-        const response = await fetch('http://localhost:5000/api/process', {
+        const response = await fetch('https://e853-39-58-191-253.ngrok-free.app/api/process', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
